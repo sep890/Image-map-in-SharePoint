@@ -1,0 +1,124 @@
+<!-- Replace all existing information with your own content such as links and titles -->
+
+<h2>Smithsonian Organization Chart</h2>
+
+
+
+<map name="FPMap0" id="FPMap0">
+
+  
+    <area title="Board of Regents" onclick="ShowModal(this.href, &#39;UserGuide&#39;,&#39;left=20,top=20,width=1160,height=1000,toolbar=1,resizable=1&#39;); return false; " 
+    href="https://sinet.sharepoint.com/sites/PRISM/Lists/SIOrgInfo/BoardOfRegents.aspx?ID=1&isdlg=1" shape="rect" coords="538,29,716,167";/>
+    <area title="Secretary" onclick="location(this.href, &#39;UserGuide&#39;,&#39;left=20,top=20,width=1160,height=1000,toolbar=1,resizable=1&#39;); return false;"     
+    href="https://sinet.sharepoint.com/sites/PRISM/SitePages/Image-Map-Secretary.aspx" shape="rect" coords="538,189,717,308"/>
+    <area title="Office of the Regents" onclick="ShowModal(this.href, &#39;UserGuide&#39;,&#39;left=20,top=20,width=1160,height=1000,toolbar=1,resizable=1&#39;); return false;" 
+    href="https://sinet.sharepoint.com/sites/PRISM/Lists/SIOrgInfo/Office%20of%20the%20Regents.aspx?ID=1&isdlg=1" shape="rect" coords="777,31,913,90"/>
+    <area title="General Counsel" onclick="ShowModal(this.href, &#39;UserGuide&#39;,&#39;left=20,top=20,width=1160,height=1000,toolbar=1,resizable=1&#39;); return false;" 
+    href="https://sinet.sharepoint.com/sites/PRISM/Lists/SIOrgInfo/GeneralCounsel.aspx?ID=1&isdlg=1" shape="rect" coords="356,148,495,209"/>
+    <area title="Inspector General" onclick="location(this.href, &#39;UserGuide&#39;,&#39;left=20,top=20,width=1160,height=1000,toolbar=1,resizable=1&#39;); return false;" 
+    href="https://sinet.sharepoint.com/sites/PRISM/SitePages/Image-Map-InspectorGeneral.aspx" shape="rect" coords="775,108,912,171""/>
+    <area title="Director, Equal Emp. and Minority Affairs" onclick="ShowModal(this.href, &#39;UserGuide&#39;,&#39;left=20,top=20,width=1160,height=1000,toolbar=1,resizable=1&#39;); return false;" 
+    href="https://sinet.sharepoint.com/sites/PRISM/Lists/SIOrgInfo/DirectorEqualEmpMinorityAffairs.aspx?ID=1&isdlg=1" shape="rect" coords="777,218,914,281"/>
+    <area title="Chief Operating Officer and Under Secretary Finance and Administration" onclick="location(this.href, &#39;UserGuide&#39;,&#39;left=20,top=20,width=1160,height=1000,toolbar=1,resizable=1&#39;); return false;" 
+    href="https://sinet.sharepoint.com/sites/PRISM/SitePages/Image-Map-OUSFA.aspx" shape="rect" coords="357,337,568,435"/>
+    <area title="Provost and Under Secretary Museums, Education and Research" onclick="location(this.href, &#39;UserGuide&#39;,&#39;left=20,top=20,width=1160,height=1000,toolbar=1,resizable=1&#39;); return false;" 
+    href="https://sinet.sharepoint.com/sites/PRISM/SitePages/Image-Map-OUSMRP.aspx" shape="rect" coords="686,336,898,436"/>
+    <area title="Assistant Secretary Advancement" onclick="location(this.href, &#39;UserGuide&#39;,&#39;left=20,top=20,width=1160,height=1000,toolbar=1,resizable=1&#39;); return false;" 
+    href="https://sinet.sharepoint.com/sites/PRISM/SitePages/Image-Map-ASA.aspx" shape="rect" coords="310,494,508,594"/>
+    <area title="Assistant Secretary Communications and External Affairs" onclick="location(this.href, &#39;UserGuide&#39;,&#39;left=20,top=20,width=1160,height=1000,toolbar=1,resizable=1&#39;); return false;" 
+    href="https://sinet.sharepoint.com/sites/PRISM/SitePages/Image-Map-OCEA.aspx" shape="rect" coords="528,494,724,593"/>
+    <area title="Associate Provost for Education and Access" onclick="location(this.href, &#39;UserGuide&#39;,&#39;left=20,top=20,width=1160,height=1000,toolbar=1,resizable=1&#39;); return false;" 
+    href="https://sinet.sharepoint.com/sites/PRISM/SitePages/Image-Map-AssociateProvostforEducationandAccess.aspx" shape="rect" coords="739,462,921,554"/>
+    </map>
+    <img id="SIOrgChart" alt="Smithsonian Org Chart" src="https://sinet.sharepoint.com/sites/OCIO-412000SharePointTeam/SPOMig/Lists/Migration%20Communication/Attachments/52/image003.jpg" usemap="#FPMap0" style="border-top: white 0px solid; border-right: white 0px solid; border-bottom: white 0px solid; margin: 0px; border-left: white 0px solid; margin-left: -5px; margin-right: -15px;"/><br/>&#160;<br/>&#160;
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p></p>
+    <iframe id="myIFrame" src="" width="100%" height="600" frameborder="0" onload="onFrameRefresh()" ></iframe>
+    <p></p>   
+  </div>
+
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+var isChromium = window.chrome;
+var winNav = window.navigator;
+var vendorName = winNav.vendor;
+var isOpera = typeof window.opr !== "undefined";
+var isIEedge = winNav.userAgent.indexOf("Edge") > -1;
+var isIOSChrome = winNav.userAgent.match("CriOS");
+
+if (isIOSChrome) {
+   // is Google Chrome on IOS
+} else if(
+  isChromium !== null &&
+  typeof isChromium !== "undefined" &&
+  vendorName === "Google Inc." &&
+  isOpera === false &&
+  isIEedge === false
+
+) {
+   // is Google Chrome
+// When the user clicks the image map, open the modal 
+function ShowModal(myHref, myTitle)
+{
+
+  var modal = document.getElementById('myModal');
+  var iframe = document.getElementById('myIFrame').src = myHref;
+  modal.style.display = "block"
+// Timer added for Chrome
+setTimeout(function () { onFrameRefreshChrome(); }, 800);
+
+}
+
+}
+else {
+   // not Google Chrome 
+function ShowModal(myHref, myTitle)
+{
+
+  var modal = document.getElementById('myModal');
+  var iframe = document.getElementById('myIFrame').src = myHref;
+  modal.style.display = "block"
+
+}
+}
+// Removes ribbon on modal
+function onFrameRefresh() {
+frames['myIFrame'].document.getElementById("s4-ribbonrow").style.display="none";
+}
+
+// Removes ribbon in Chrome
+function onFrameRefreshChrome() {
+window.frames['myIFrame'].contentDocument.getElementById("s4-ribbonrow").style.display="none";
+}
+
+
+</script>
